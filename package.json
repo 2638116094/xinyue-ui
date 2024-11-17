@@ -15,11 +15,13 @@
     "vue": "3.5.12"
   },
   "devDependencies": {
-    "vue": "^3.5.12",
-    "xinyue": "workspace:*",
+    "vue": "^3.5.12"
+  },
+  "dependencies": {
     "@xinyue/components": "workspace:*",
+    "@xinyue/constants": "workspace:*",
     "@xinyue/theme": "workspace:*",
     "@xinyue/utils": "workspace:*",
-    "@xinyue/constants": "workspace:*"
+    "dayjs": "^1.11.13"
   }
 }

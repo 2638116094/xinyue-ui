@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { XYButton, XYInput } from 'xinyue';
 import HelloWorld from './components/HelloWorld.vue'
+import { isNumber } from 'xinyue';
+console.log('isNumber',isNumber('1213'))
 </script>
 
 <template>
