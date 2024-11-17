@@ -1,0 +1,12 @@
+{
+  "name": "xinyue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "3.5.12"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

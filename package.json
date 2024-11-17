@@ -1,0 +1,25 @@
+{
+  "private": "true",
+  "name": "xinyue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm -C example dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "3.5.12"
+  },
+  "devDependencies": {
+    "vue": "^3.5.12",
+    "xinyue": "workspace:*",
+    "@xinyue/components": "workspace:*",
+    "@xinyue/theme": "workspace:*",
+    "@xinyue/utils": "workspace:*",
+    "@xinyue/constants": "workspace:*"
+  }
+}

@@ -1,0 +1,20 @@
+# eidt 
+.idea
+.vscode
+# package manager
+node_modules
+.pnpm-debug.log*
+pnpm-lock.yaml
+
+# System
+.DS_Store
+
+# Bundle
+dist
+coverage
+package/xinyue/version.ts
+# local
+*.local
+.eslintcache
+tmp
+docs/.vitepress/cache
