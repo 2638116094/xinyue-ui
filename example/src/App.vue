@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { XYButton, XYInput } from 'xinyue';
 import HelloWorld from './components/HelloWorld.vue'
-import { isNumber } from 'xinyue';
-console.log('isNumber',isNumber('1213'))
+import { dayjs } from 'xinyue';
+// console.log('isNumber',isNumber('1213'))
+console.log(dayjs().format('YYYY-MM-DD'))
 </script>
 
 <template>
@@ -15,8 +15,8 @@ console.log('isNumber',isNumber('1213'))
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <XYButton></XYButton>
-  <XYInput></XYInput>
+  <!-- <XYButton></XYButton> -->
+  <!-- <XYInput></XYInput> -->
 </template>
 
 <style scoped>

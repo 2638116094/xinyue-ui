@@ -5,10 +5,10 @@ const ConfigProvider=defineComponent({
     name: 'XYConfigProvider',
     // props: 
     setup(props, { slots }) {
-        watch(
-
-        )
-        // const config=
+        // watch(
+        //     () => props,
+        // )
+        const config= {value: ''} 
         return () => renderSlot(slots, 'default', { config: config?.value })
     }
 })
