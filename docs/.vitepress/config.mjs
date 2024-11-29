@@ -2,9 +2,37 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "这是title",
+  description: "description",
+  appearance:"dark",
+  lang:"zh-CN",
+  sidebarMenuLabel:'目录',
+  returnToTopLabel: '返回顶部',
+  cleanUrls:true,// 开启纯净链接
   themeConfig: {
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档···'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -14,15 +42,33 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Examples',
+        collapsed: true,
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '111Runtime ', link: '/api-examples' },
+          { text: '快速入门', link: '/guid' }
+        ]
+      },
+      {
+        text: '分组2',
+        collapsed: true,
+        items: [
+          { text: '子集', link: '/guid' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'gitee', link: 'https://gitee.com/zzcjmxj_admin' }
+    ],
+    footer: {
+      message: 'Released under the MIT license.',
+      copyright: `Copyright © 2019-${new Date().getFullYear()} present Evan You`
+    },
+    editLink: { 
+      pattern: 'https://github.com/2638116094/xinyue-ui/tree/main/docs/:path', // 改成自己的仓库
+      text: '在GitHub编辑本页'
+    },
   }
 })

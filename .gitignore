@@ -9,6 +9,10 @@ pnpm-lock.yaml
 # System
 .DS_Store
 
+
+# vitepress
+cache
+
 # Bundle
 dist
 coverage
