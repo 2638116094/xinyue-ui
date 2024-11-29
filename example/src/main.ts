@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import './style.css'
+import Xinyue from 'xinyue'
 import App from './App.vue'
-createApp(App).mount('#app')
+console.log(Xinyue)
+
+const app = createApp(App)
+app.use(Xinyue)
+app.mount('#app')

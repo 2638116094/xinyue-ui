@@ -6,10 +6,32 @@ export default defineConfig({
   description: "description",
   appearance:"dark",
   lang:"zh-CN",
-  sidebarMenuLabel:'目录',
-  returnToTopLabel: '返回顶部',
-  cleanUrls:true,// 开启纯净链接
+  cleanUrls: true,// 开启纯净链接
+  markdown: {
+    image: {
+      lazyLoading: true
+    }
+  },
   themeConfig: {
+    sidebarMenuLabel:'目录',
+    returnToTopLabel: '返回顶部',
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    carbonAds: {
+      carbonAds: {
+        code: 'carbon-code',
+        placement: 'carbon-placement'
+      }
+    },
     search: {
       provider: 'local',
       options: {

@@ -21,6 +21,7 @@
     "vue-tsc": "^2.1.8"
   },
   "dependencies": {
+    "xinyue": "workspace:*",
     "@xinyue/components": "workspace:*",
     "@xinyue/constants": "workspace:*",
     "@xinyue/locale": "workspace:*",
