@@ -1,12 +1,33 @@
 {
-  "name": "build-utils",
-  "version": "1.0.0",
+  "name": "@xinyue-ui/build-utils",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm run stub",
+    "stub": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "exports": {
+    ".":  {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@pnpm/find-workspace-packages": "^4.0.16",
+    "@pnpm/logger": "^4.0.0",
+    "consola": "^2.15.3"
+  }
 }

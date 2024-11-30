@@ -16,7 +16,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "types": ["vite/client"],
-    // "paths": {},
+    // "paths": {
+    //   "xinyue": ["workspace:*"]
+    // },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

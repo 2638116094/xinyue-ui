@@ -1,5 +1,5 @@
 {
-  "name": "xinyue",
+  "name": "xinyue-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
 }

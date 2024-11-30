@@ -1,12 +1,30 @@
 {
-  "name": "@xinyue/theme",
+  "name": "@xinyue-ui/theme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.css",
+  "unpkg": "index.css",
+  "jsdelivr": "index.css",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "peerDependencies": {
     "vue": "3.5.12"
+  },
+  "scripts": {
+    "build": "gulp --require @esbuild-kit/cjs-loader",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@esbuild-kit/cjs-loader": "^2.4.4",
+    "@types/gulp-autoprefixer": "^0.0.37",
+    "@types/gulp-rename": "^2.0.6",
+    "@types/gulp-sass": "^5.0.4",
+    "@xinyue-ui/build": "workspace:*",
+    "cssnano": "^7.0.6",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.0",
+    "postcss": "^8.4.49"
   }
 }

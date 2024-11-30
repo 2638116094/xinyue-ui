@@ -1,5 +1,5 @@
 {
-  "name": "@xinyue/constants",
+  "name": "@xinyue-ui/constants",
   "version": "1.0.0",
   "private":"true",
   "main": "index.ts",
