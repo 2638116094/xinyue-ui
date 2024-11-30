@@ -7,7 +7,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts"
+    "start": "gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts",
+    "dev": "pnpm run stub",
+    "stub":  "unbuild --stub"
   },
   "keywords": [],
   "author": "",

@@ -42,3 +42,11 @@ export const buildConfig: Record<Module, BuildInfo>= {
         }
     }
 }
+
+export const buildConfigEntries = Object.entries(
+    buildConfig
+) as BuildConfigEntries
+
+export type BuildConfigEntries = [Module, BuildInfo][]
+
+export const target='es2018'

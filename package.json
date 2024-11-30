@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm -C example dev",
     "docs:dev": "pnpm -C docs dev",
-    "build": "pnpm -C internal/build build"
+    "build": "pnpm -C internal/build start"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "qxl-ui": "^1.0.0",
     "rimraf": "^6.0.1",
     "sass": "^1.81.0",
+    "unplugin-vue-macros": "^2.13.4",
     "vue": "^3.5.12",
     "vue-tsc": "^2.1.8"
   },

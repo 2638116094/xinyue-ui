@@ -46,14 +46,14 @@ export default series(
     withTaskName('createOutput', ()=> mkdir(epOutput, { recursive: true })),
     parallel(
         runTask('buildModules'),
-        runTask('buildFunllBundle'),
+        // runTask('buildFunllBundle'),
         // runTask('generatetypesDefinitions'),
-        series(
-            withTaskName('buildThemeChalk', () => run('pnpm run -C packages/theme build')),
-            // copyFullStyle
-        )
+        // series(
+        //     withTaskName('buildThemeChalk', () => run('pnpm run -C packages/theme build')),
+        //     copyFullStyle
+        // )
     ),
-    parallel(copyTypesDefinitions, copyFiles)
+    // parallel(copyTypesDefinitions, copyFiles)
 )
 
 
