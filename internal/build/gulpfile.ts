@@ -42,10 +42,10 @@ export const copyFullStyle= async () => {
 }
 
 export default series(
-    withTaskName('clean',() => run('pnpm run clean')),
+    // withTaskName('clean',() => run('pnpm run clean')),
     withTaskName('createOutput', ()=> mkdir(epOutput, { recursive: true })),
     parallel(
-        runTask('buildModules'),
+        // runTask('buildModules'),
         // runTask('buildFunllBundle'),
         // runTask('generatetypesDefinitions'),
         // series(
@@ -57,4 +57,5 @@ export default series(
 )
 
 
-export * from './src'
+// export * from './src'
+console.log('111')

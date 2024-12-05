@@ -19,6 +19,7 @@
     "vue": "3.5.12"
   },
   "devDependencies": {
+    "@esbuild-kit/cjs-loader": "^2.4.4",
     "@types/gulp": "^4.0.17",
     "fs-extra": "^11.2.0",
     "qxl-ui": "^1.0.0",
