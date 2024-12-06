@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@xinyue-ui/theme": "^1.0.0"
+    "@xinyue-ui/theme": "workspace:*"
   }
 }

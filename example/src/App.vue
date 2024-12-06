@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { dayjs } from 'xinyue';
+import { dayjs, XYButton } from 'xinyue-ui';
 // console.log('isNumber',isNumber('1213'))
-console.log(dayjs().format('YYYY-MM-DD'))
+// console.log(dayjs().format('YYYY-MM-DD'))
 </script>
 
 <template>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <!-- <XYButton></XYButton> -->
+  <XYButton>按钮</XYButton>
   <!-- <XYInput></XYInput> -->
 </template>
 

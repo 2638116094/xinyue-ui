@@ -1,6 +1,6 @@
 // import {} from '@xinyue/component'
 // import {}
-import { isNumber } from '@xinyue/utils'
+import { isNumber } from '@xinyue-ui/utils'
 import type { Plugin } from "vue";
 
 

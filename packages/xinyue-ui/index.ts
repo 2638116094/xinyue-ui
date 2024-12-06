@@ -1,6 +1,6 @@
 import installer from './defaults'
-export * from '@xinyue/components'
-export * from '@xinyue/constants'
+export * from '@xinyue-ui/components'
+export * from '@xinyue-ui/constants'
 export const install = installer.install
 export const version = installer.version
 export default installer

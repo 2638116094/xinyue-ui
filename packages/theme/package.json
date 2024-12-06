@@ -1,10 +1,11 @@
 {
   "name": "@xinyue-ui/theme",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.css",
   "unpkg": "index.css",
   "jsdelivr": "index.css",
+  "style": "index.css",
   "keywords": [],
   "author": "",
   "license": "ISC",
