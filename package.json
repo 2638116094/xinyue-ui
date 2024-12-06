@@ -18,6 +18,11 @@
   "peerDependencies": {
     "vue": "3.5.12"
   },
+  "workspaces": [
+    "packages/*",
+    "example",
+    "docs"
+  ],
   "devDependencies": {
     "@types/gulp": "^4.0.17",
     "fs-extra": "^11.2.0",
