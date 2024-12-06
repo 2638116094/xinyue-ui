@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:color';
+
+@use './var.scss';
+html.dark {
+    // color-scheme: dark;
+    .demo {
+        color: 'pink';
+    }
+}
