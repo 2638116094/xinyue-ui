@@ -2,14 +2,15 @@
   "name": "@xinyue-ui/build",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts",
+    "build": "gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts",
     "dev": "pnpm run stub",
-    "stub":  "unbuild --stub"
+    "stub": "unbuild --stub"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +33,6 @@
     "rollup-plugin-scss": "^4.0.0"
   },
   "devDependencies": {
-    "@esbuild-kit/cjs-loader": "^2.4.4",
     "@xinyue-ui/build-constants": "workspace:*",
     "unbuild": "^2.0.0",
     "vue": "^3.5.12"

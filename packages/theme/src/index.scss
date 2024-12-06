@@ -1,1 +1,5 @@
-@use 'base.scss'
+@use './color/index.scss';
+@use 'base.scss';
+html {
+    color: mix-overlay-color('red','green', '')
+}

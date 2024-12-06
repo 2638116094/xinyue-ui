@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm -C example dev",
     "docs:dev": "pnpm -C docs dev",
-    "build": "pnpm -C internal/build start"
+    "build": "pnpm -C internal/build build",
+    "theme": "pnpm -C packages/theme build"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "docs"
   ],
   "devDependencies": {
+    "@esbuild-kit/cjs-loader": "^2.4.4",
     "@types/gulp": "^4.0.17",
     "fs-extra": "^11.2.0",
     "qxl-ui": "^1.0.0",

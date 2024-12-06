@@ -69,6 +69,7 @@ function buildThemeChalk() {
         .pipe(dest(distFolder))
 }
 
+//dark 模式样式打包
 function buildDarkCssVars() {
     const sass = gulpSass(dartSass)
     return src(path.resolve(__dirname, 'src/dark/css-vars.scss'))
@@ -78,10 +79,11 @@ function buildDarkCssVars() {
         .pipe(dest(`${distFolder}/dark`))
 }
 
+// 复制css样式到dist
 export function copyThemeChalkBundle() {
     return src(`${distFolder}/**`).pipe(dest(distBundle))
 }
-
+// 复制scss样式到dist
 export function copyThemeChalkSource() {
     return src(path.resolve(__dirname,'src/**')).pipe(
         dest(path.resolve(distBundle, 'src'))
@@ -89,7 +91,11 @@ export function copyThemeChalkSource() {
 }
 
 export const build=parallel(
+    
     copyThemeChalkSource,
-    series(buildThemeChalk, buildDarkCssVars, copyThemeChalkBundle)
+    series(buildThemeChalk, 
+        buildDarkCssVars, 
+        // copyThemeChalkBundle
+    )
 )
 export default build
