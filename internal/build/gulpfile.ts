@@ -57,5 +57,4 @@ export default series(
 )
 
 
-// export * from './src'
-console.log('111')
+export * from './src'

@@ -8,5 +8,8 @@
     "vue": "3.5.12"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@xinyue-ui/theme": "^1.0.0"
+  }
 }

@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm -C example dev",
     "docs:dev": "pnpm -C docs dev",
-    "build": "pnpm -C internal/build start"
+    "build": "pnpm -C internal/build build",
+    "theme": "pnpm -C packages/theme build"
   },
   "keywords": [],
   "author": "",
